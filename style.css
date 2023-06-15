@@ -1,0 +1,392 @@
+body {
+    font-family: Futura;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu-wrapper {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    max-width: 1140px;
+    display: flex;
+    width: 100%;
+    padding-top: 9px;
+    padding-bottom: 9px;
+
+}
+
+.menu-items {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+
+    
+}
+
+.menu-item {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 6px;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    gap: 4px;
+}
+
+.dark {
+    background-color: #000000;
+    color: white;
+    padding: 4px 10px;
+}
+
+
+.dark:hover {
+    background-color: #333333 !important;
+    
+}
+
+.menu-item:hover {
+    background-color: rgba(0, 0, 0, 0.07);
+}
+
+.body-content-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px auto;
+}
+
+
+.body-content {
+    max-width: 1140px;
+    width: 100%;
+}
+
+.offerings-list {
+    display: flex;
+    gap: 10px;
+
+    .offering {
+        display: flex;
+        border: 1px solid black;
+        gap: 13px;
+        flex: 1;
+        padding: 12px 17px;
+        border-radius: 12px;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+    .offering:hover {
+        background-color: #000000;
+        color: white;
+
+        .offering-icon {
+            fill: white;
+    
+        }
+    }
+}
+
+.search {
+    margin-top: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-form {
+    position: absolute;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    width: 71%;
+    border-radius: 30px;
+    padding: 0 12px;
+    box-shadow: 0 4px 4px rgba(0,0,0,.25);
+}
+
+.search-form-input {
+    all: unset;
+    font-size: 18px;
+    height: 60px;
+    line-height: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.search-icon {
+    all: unset;
+    width: 42px;
+    display: flex;
+    justify-content: center;
+}
+
+.check-in {
+    margin-top: 64px;
+    position: relative;
+}
+
+.check-in-img {
+    object-fit: cover;
+}
+
+.check-in-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 48px;
+    padding-left: 24px;
+    color: white;
+    padding-top: 96px;
+    background: linear-gradient(to top,rgba(0,0,0,0.42) 0,rgba(0,0,0,0.42) 96px,rgba(0,0,0,0.42) calc(100% - 96px),rgba(0,0,0,0) 100%);
+}
+
+.check-in-title {
+    font-size: 36px;
+    line-height: 38px;
+    font-weight: 800;
+
+}
+
+.check-in-subtitle {
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 24px;
+
+}
+
+.check-in-link {
+    all: unset;
+    color: black;
+    size: 16px;
+    line-height: 16px;
+    font-weight: 400;
+    padding: 16px 24px;
+    background-color: #ffffff;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.check-in-link:hover {
+    background-color: #f2f2f2;
+}
+
+.list-section {
+    margin-top: 80px;
+
+    .list-section-title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .list-section-subtitle {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 8px;
+        font-weight: 300;
+    }
+
+}
+
+.list-wrapper {
+    margin-top: 16px;
+    display: flex;
+    max-width: 100%;
+    position: relative;
+}
+
+.top-categories-list {
+   
+    display: flex;
+    gap: 16px;
+    max-width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.top-categories-list::-webkit-scrollbar {
+    display: none;
+}
+
+.top-category {
+    min-width: calc(25% - 16px);
+    position: relative;
+
+    .top-category-image {
+        width: 100%;
+        aspect-ratio: 1;
+    }
+
+    .top-category-title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 32px 16px 16px;
+        color: #ffffff;
+        font-size: 28px;
+        line-height: 28px;
+        font-weight: 800;
+        width: 100%;
+        background: linear-gradient(to top,rgba(0,0,0,.6) 0,rgba(0,0,0,.6) calc(100% - 32px),rgba(0,0,0,0) 100%);
+    }
+}
+
+.top-category:hover {
+    .top-category-image {
+        opacity: 0.8;
+    }
+}
+
+.left-icon {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    z-index: 2;
+    height: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: #ffffff;
+}
+
+.left-icon:hover {
+    background-color: #000000;
+
+    .icon {
+        fill: white;
+    }
+}
+
+.right-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 2;
+    height: 40px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: #ffffff;
+}
+
+.right-icon:hover {
+    background-color: #000000;
+
+    .icon {
+        fill: white;
+    }
+}
+
+.ways-to-tour-list {
+    display: flex;
+    gap: 16px;
+    max-width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.ways-to-tour-list::-webkit-scrollbar {
+    display: none;
+}
+
+
+.tour {
+    min-width: calc(25% - 16px);
+
+    .tour-title {
+        font-weight: bold;
+    }
+}
+
+.user-list {
+    display: flex;
+    gap: 16px;
+    max-width: 100%;
+    overflow-x: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */ 
+}
+
+.user::-webkit-scrollbar {
+    display: none;
+}
+
+
+.user {
+    all: unset;
+    border: 2px solid black;
+    min-width: calc(25% - 16px);
+    padding-top: 4px;
+    padding-left: 4px;
+    cursor: pointer;
+}
+
+.user:hover {
+    background-color: black;
+    color: white;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  /*
+    2. Remove default margin
+  */
+  * {
+    margin: 0;
+  }
+  /*
+    Typographic tweaks!
+    3. Add accessible line-height
+    4. Improve text rendering
+  */
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  /*
+    5. Improve media defaults
+  */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  /*
+    6. Remove built-in form typography styles
+  */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  /*
+    7. Avoid text overflows
+  */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  /*
+    8. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
